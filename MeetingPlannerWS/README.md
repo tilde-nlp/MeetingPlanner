@@ -1,6 +1,6 @@
 # Meeting Planner service
 ## Introduction
-Returns embeddings for the each item in input text.
+Web Service for communication with Meeting Planner VA and SQL database.
 
 ## Getting Started
 To set up the Docker container perform the following steps:
