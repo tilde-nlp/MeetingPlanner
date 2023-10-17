@@ -40,6 +40,7 @@ Conversation partners: Virtual Assistant and Meeting organizer
 -	Virtual Assistant offers meeting organizer to set the final time for the meeting (if the meeting status is ‘active’) and calls the Web Service’s method *ScheduleMeeting*  by passing meeting ID and meeting time. Invitees are notified by the e-mail.
 -	The meeting organizer also can choose to cancel some meeting. In this case, the status of the meeting is changed to ‘canceled’ and invitees notified by the e-mail.
 
+![Virtual Assistant scenarious](VAscenarious.jpg)
 
 ## MeetingPlanner Web Service
 
