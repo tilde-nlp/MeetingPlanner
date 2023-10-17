@@ -8,6 +8,8 @@ Meeting Planner prototype consists of 3 modules:
 
 3. Meeting Planner database - the source code in folder `SQLDatabase`
 
+## The architecture of the Meeting Planner
+
 ![Architecture of the Meeting Planner](architecture.jpg)
 
 ## MeetingPlanner Virtual Assistant
