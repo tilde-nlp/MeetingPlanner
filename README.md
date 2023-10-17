@@ -42,6 +42,10 @@ Conversation partners: Virtual Assistant and Meeting organizer
 
 ![Virtual Assistant scenarious](VAscenarious.jpg)
 
+In example dialog the Virtual Assistant is asking invitee to vote for every potential meeting time.
+
+![Example dialog](example_dlg.jpg)
+
 ## MeetingPlanner Web Service
 
 Web Service has 8 methods:
