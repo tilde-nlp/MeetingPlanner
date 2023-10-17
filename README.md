@@ -12,6 +12,33 @@ Meeting Planner prototype consists of 3 modules:
 
 ## MeetingPlanner Virtual Assistant
 
+3 main scenarios are available for the **Meeting Planner**.
+
+1.	Scheduling a new meeting
+
+Conversation partners: Virtual Assistant and Meeting organizer
+
+After the meeting organizer choses to schedule a new meeting the Virtual Assistant asks in a guided dialogue about meeting subject, length, e-mails of invitees and the organizer itself and the desired meeting times. This info is passed to the Web Service’s method *NewMeeting*.
+
+2.	Choosing meeting time
+
+Conversation partners: Virtual Assistant and Invitee
+
+Invitee opens Web chat URL sent to him/her by e-mail. Virtual Assistant calls the Web Service’s method *GetMeetingInfo* by passing meeting ID that is in the URL.
+
+In a guided dialog Virtual Assistant displays info about the meeting and asks to mark the preferred meeting times. After, Virtual Assistant calls the Web Service’s method *SaveInviteeChoice* that saves user preferences in the database.
+
+3.	Other functions available to the meeting organizer
+
+Conversation partners: Virtual Assistant and Meeting organizer
+
+-	Meeting organizer opens Web chat and chooses to see the meetings he/she is organizing or participating.
+-	Virtual Assistant displays the list of meetings and asks to specify item number from the list of meetings and calls the Web Service’s method *GetMeetingInfo* by passing meeting ID.
+-	Virtual Assistant displays the info about the meeting and invitees’ responses.
+-	Virtual Assistant offers meeting organizer to set the final time for the meeting (if the meeting status is ‘active’) and calls the Web Service’s method *ScheduleMeeting*  by passing meeting ID and meeting time. Invitees are notified by the e-mail.
+-	The meeting organizer also can choose to cancel some meeting. In this case, the status of the meeting is changed to ‘canceled’ and invitees notified by the e-mail.
+
+
 ## MeetingPlanner Web Service
 
 Web Service has 8 methods:
