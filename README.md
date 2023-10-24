@@ -97,7 +97,7 @@ Meeting Planner Web Service uses 3 variables that must be added to the environme
 
 ## MeetingPlanner database
 
-Meeting Planner database has 5 tables.
+Meeting Planner database has 5 tables:
 
 ![Meeting Planner database](SQLdatabase.jpg)
 
